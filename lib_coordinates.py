@@ -2,6 +2,13 @@ import numpy as np
 
 '''
 ONLY USEFUL FOR TRIATOMIC SYSTEMS (N=3) BUT STRAIGHTFORWARDLY GENERALIZABLE TO BIGGER SYSTEMS.
+
+Q : handy generalized coordinates for the reaction between an atom A and dimatomic molecule BC.
+
+q : Cartesian coordinates
+
+i*D+j index refers to the ith atom and the jth spatial dimension.
+
 '''
 
 def Q_coords(N, D, m, q):
