@@ -1,4 +1,5 @@
 # WORK in PROGRESS
+Currently revamping it to be more modular and applicable.
 # Phase-space-density-visualisator
 Program which can display dynamically the 2D density plot of the phase space coordinates.
 Currently revamping it for applicability
