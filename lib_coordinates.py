@@ -43,12 +43,6 @@ def q_coords(N,D,m,Q):
                           (m[(N-3)*D:(N-2)*D]+m[(N-2)*D:(N-1)*D]+m[(N-1)*D:N*D])*Q[(N-2)*D:(N-1)*D] + Q[(N-1)*D:N*D]
     return qb
 
-def distance_R(Q):
-    return np.sqrt(Q[3]**2 + Q[4]**2 + Q[5]**2)
-
-def distance_r(Q):
-    return np.sqrt(Q[0]**2 + Q[1]**2 + Q[2]**2)
-
 def xyzcoords_to_Rr(N, D, m, q):
     Q = Q_coords(N,D,m,q)
     return np.sqrt(Q[3]**2 + Q[4]**2 + Q[5]**2), np.sqrt(Q[0]**2 + Q[1]**2 + Q[2]**2)
