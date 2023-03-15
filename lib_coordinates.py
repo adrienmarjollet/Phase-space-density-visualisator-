@@ -2,13 +2,6 @@ import numpy as np
 
 '''
 ONLY USEFUL FOR TRIATOMIC SYSTEMS (N=3) BUT STRAIGHTFORWARDLY GENERALIZABLE TO BIGGER SYSTEMS.
-
-Q : handy generalized coordinates for the reaction between an atom A and dimatomic molecule BC.
-
-q : Cartesian coordinates
-
-i*D+j index refers to the ith atom and the jth spatial dimension.
-
 '''
 
 def Q_coords(N, D, m, q):
@@ -43,11 +36,21 @@ def q_coords(N,D,m,Q):
                           (m[(N-3)*D:(N-2)*D]+m[(N-2)*D:(N-1)*D]+m[(N-1)*D:N*D])*Q[(N-2)*D:(N-1)*D] + Q[(N-1)*D:N*D]
     return qb
 
+
 def xyzcoords_to_Rr(N, D, m, q):
+    '''
+    Input:  Cartesian coordinates q (np.array)
+    Output: 
+            R: distance between the incoming atom A and BC's center of mass 
+    '''
     Q = Q_coords(N,D,m,q)
     return np.sqrt(Q[3]**2 + Q[4]**2 + Q[5]**2), np.sqrt(Q[0]**2 + Q[1]**2 + Q[2]**2)
 
 def replica_xyzcoords_to_Rr(N, D, n, Zq, k, m):
+    '''
+    Same as xyzcoords_to_Rr but for each slice of imaginary time, that is to say each ensemble of replica 
+    corresponding to the kth slice (among the n total slices).
+    '''
     return xyzcoords_to_Rr(m, Zq[k:N*D*n+k:n])
 
 def centroids(Zq,n):
