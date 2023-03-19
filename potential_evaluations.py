@@ -23,7 +23,8 @@ class pot_eval:
         else: 
             print('No molecular potential to work with.')
             sys.exit()
-
+            
+    @staticmethod
     def POT_H3(position_matrix):
         '''
         Potential energy as function of the Cartesian coordinates
@@ -33,7 +34,8 @@ class pot_eval:
         v, dummy = pot.pot(position_matrix)
         v += 0.174496  #To set the zero of the potential (does not influence the dynamics)
         return v
-
+    
+    @staticmethod
     def POT_H3_rRa(r, R, angle):
         '''
         We use cylindric symmetry of the target when its cm is on the main axis 
