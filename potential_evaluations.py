@@ -49,7 +49,7 @@ class pot_eval:
         v += 0.174496
         return v
 
-    def POT_H3_rR_min_BruteForced(R_arr, r_arr):
+    def POT_H3_rR_min_BruteForced(self,R_arr, r_arr):
         '''
         BF algo (used once per compilation) to find the global minimums for a set of distances.
         R_arr : distances for R
