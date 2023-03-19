@@ -11,4 +11,6 @@ Numpy, scipy, matplotlib, mplt_toolkits, sympy, imageio, shutil, sys, os.
 
 # Possible output
 
-![My Image](toc.jpg)
+![](toc.jpg | width=30)
+
+![](densities.jpg | width=30)
