@@ -7,3 +7,8 @@ Currently revamping it for applicability
 # Developed in Python 3.9. Dependencies: 
 
 Numpy, scipy, matplotlib, mplt_toolkits, sympy, imageio, shutil, sys, os.
+
+
+# Possible output
+
+![My Image](toc.jpg)
