@@ -11,6 +11,6 @@ Numpy, scipy, matplotlib, mplt_toolkits, sympy, imageio, shutil, sys, os.
 
 # Possible outputs 
 
-<img src="toc.jpg" width="20%" height="20%" /> <img src="v1_replica_fps4_R_Elow.gif" width="20%" height="20%" />
+<img src="toc.jpg" width="25%" height="25%" /> <img src="v1_replica_fps4_R_Elow.gif" width="40%" height="40%" />
 
 
