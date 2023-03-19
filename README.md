@@ -9,10 +9,8 @@ Currently revamping it for applicability
 Numpy, scipy, matplotlib, mplt_toolkits, sympy, imageio, shutil, sys, os.
 
 
-# Possible output
+# Possible outputs 
 
-![](toc.jpg | width=30)
+<img src="toc.jpg" width="20%" height="20%" />
 
-<img src="toc.jpg" width="50%" height="50%" />
-
-![](densities.jpg | width=30)
+<img src="densities.jpg" width="20%" height="20%" />
