@@ -13,4 +13,6 @@ Numpy, scipy, matplotlib, mplt_toolkits, sympy, imageio, shutil, sys, os.
 
 ![](toc.jpg | width=30)
 
+<toc.jpg width="100" height="100">
+
 ![](densities.jpg | width=30)
