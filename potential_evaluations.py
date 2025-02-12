@@ -7,7 +7,7 @@ import os
 import pot
 import sys
 
-class pot_eval:
+class EvaluationPotential:
     '''
     Default potential: .so file which is an accurate compiled potential program for a system consisting of 3 hydrogen atoms ('H3')
     '''
